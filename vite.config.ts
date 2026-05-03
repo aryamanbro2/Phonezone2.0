@@ -1,11 +1,12 @@
-import { defineConfig } from "@tanstack/start/config";
+import { defineConfig } from "vite";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import viteReact from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-    server: {
-        preset: "vercel",
-    },
-    vite: {
-        plugins: [tsconfigPaths()],
-    },
+  plugins: [
+    tanstackStart(),
+    viteReact(),
+    tsconfigPaths(),
+  ],
 });
