@@ -2,22 +2,42 @@ import { useEffect } from "react";
 
 export function RevealObserver() {
   useEffect(() => {
-    const els = document.querySelectorAll<HTMLElement>(".reveal");
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) {
           if (e.isIntersecting) {
             e.target.classList.add("is-in");
-            // We don't unobserve if we want them to re-animate, 
-            // but the original code unobserved, so we keep that behavior.
             io.unobserve(e.target);
           }
         }
       },
       { threshold: 0.15 }
     );
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
+
+    // Observe existing elements
+    document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+
+    // Observe future elements
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
+          if (node.nodeType === Node.ELEMENT_NODE) {
+            const el = node as HTMLElement;
+            if (el.classList.contains("reveal")) {
+              io.observe(el);
+            }
+            el.querySelectorAll(".reveal").forEach((child) => io.observe(child));
+          }
+        });
+      });
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      io.disconnect();
+      observer.disconnect();
+    };
   }, []);
 
   return null;
