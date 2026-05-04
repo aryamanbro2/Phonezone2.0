@@ -5,10 +5,10 @@ import tvs from "@/assets/cat-tvs.jpg";
 import accessories from "@/assets/cat-accessories.jpg";
 
 const slides = [
-  { idx: "01", name: "Smartphones", tag: "Flagships · Foldables", img: phones },
-  { idx: "02", name: "Laptops", tag: "Pro · Ultrabooks", img: laptops },
-  { idx: "03", name: "Smart TVs", tag: "OLED · QLED", img: tvs },
-  { idx: "04", name: "Accessories", tag: "Audio · Wear · Power", img: accessories },
+  { idx: "01", name: "Smartphones", tag: "Flagships · Apple · Samsung", img: phones },
+  { idx: "02", name: "Accessories", tag: "Premium Audio · Protection", img: accessories },
+  { idx: "03", name: "Repairs", tag: "Expert Services · Screen · Battery", img: laptops },
+  { idx: "04", name: "Smart TVs", tag: "OLED · Next-Gen Display", img: tvs },
 ];
 
 export function HorizontalShowcase() {

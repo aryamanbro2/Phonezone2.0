@@ -52,14 +52,14 @@ export function Hero() {
         className="font-display pointer-events-none absolute inset-0 flex items-center justify-center text-stroke-soft text-center font-black uppercase leading-none tracking-[-0.05em] whitespace-nowrap select-none"
         style={{ fontSize: "clamp(3rem, 13vw, 22rem)" }}
       >
-        PHONEZONE 2.0
+        PHONE ZONE 2.0
       </h1>
 
       {/* top status bar */}
       <div className="absolute left-4 right-4 top-4 z-20 flex items-center justify-between font-mono text-[8px] uppercase tracking-[0.25em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em] md:left-12 md:right-12 md:top-6">
-        <span><span className="text-molten">●</span>&nbsp;&nbsp;Showroom · No.001</span>
+        <span><span className="text-molten">●</span>&nbsp;&nbsp;Premium Showroom · Dwarka</span>
         <span className="hidden md:inline">Editorial Index / 2026</span>
-        <span className="hidden sm:inline">Lat 00.00 · Lon 00.00</span>
+        <span className="hidden sm:inline">Lat 28.58 · Lon 77.06</span>
       </div>
 
       {/* central device — 3D model */}
@@ -76,7 +76,7 @@ export function Hero() {
 
         {/* headline */}
         <h2 className="reveal font-display mt-2 text-center text-xl font-black uppercase tracking-[0.14em] sm:mt-4 sm:text-2xl md:mt-6 md:text-3xl md:tracking-[0.18em]">
-          The Future of <span className="text-molten">Tech</span>, Today.
+          Premium <span className="text-molten">Tech</span> Experience.
         </h2>
 
         {/* model switcher */}
@@ -86,17 +86,17 @@ export function Hero() {
       </div>
 
       {/* bottom CTA bar */}
-      <div className="absolute bottom-6 left-4 right-4 z-20 flex flex-col items-center justify-between gap-3 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-xs sm:tracking-[0.25em] md:bottom-10 md:left-12 md:right-12 md:flex-row">
+      <div className="absolute bottom-24 left-4 right-4 z-20 flex flex-col items-center justify-between gap-3 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-xs sm:tracking-[0.25em] md:bottom-10 md:left-12 md:right-12 md:flex-row">
         <a
           href="#showcase"
           className="reveal group z-10 inline-flex items-center gap-3 border border-molten bg-molten px-5 py-2.5 text-[10px] font-bold tracking-[0.3em] text-primary-foreground transition-colors hover:bg-transparent hover:text-molten sm:px-6 sm:py-3 sm:text-[11px]"
         >
-          Enter Showcase
+          Explore Collection
           <span className="transition-transform group-hover:translate-x-1">→</span>
         </a>
         
         <span className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 text-center md:block">
-          {brand === "iphone" ? "🍎 iPhone Mode" : "📱 Samsung Mode"} · Drag to rotate
+          {brand === "iphone" ? "🍎 iPhone Lover ❤️" : "📱 Samsung Lover 💙"} · Drag to rotate
         </span>
 
         <a href="#contact" className="z-10 text-foreground underline-offset-8 hover:text-molten hover:underline">

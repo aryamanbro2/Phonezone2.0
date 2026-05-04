@@ -20,61 +20,61 @@ export function BentoSpecs() {
         </div>
       </div>
 
-      <div className="grid flex-1 grid-cols-1 gap-3 sm:gap-4 md:grid-cols-3 md:grid-rows-2">
+      <div className="grid grid-cols-1 gap-3 sm:gap-4 md:grid-cols-3 md:grid-rows-2">
         {/* Large */}
-        <div className="reveal glass relative flex flex-col justify-between overflow-hidden p-5 sm:p-8 md:col-span-2 md:row-span-2 md:p-12">
+        <div className="reveal glass relative flex flex-col items-start gap-8 overflow-hidden p-6 sm:p-10 md:col-span-2 md:row-span-2 md:p-16">
           <div
             aria-hidden
             className="pointer-events-none absolute -right-24 -top-24 h-[60%] w-[60%] rounded-full opacity-40 blur-3xl"
             style={{ background: "radial-gradient(circle, var(--molten) 0%, transparent 70%)" }}
           />
-          <div className="flex items-center justify-between font-mono text-[9px] uppercase tracking-[0.25em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
-            <span>/01</span>
+          <div className="relative z-10 flex w-full items-center justify-between font-mono text-[9px] uppercase tracking-[0.25em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
+            <span>/01 — Identity</span>
             <ShieldCheck className="h-8 w-8 text-molten sm:h-10 sm:w-10" strokeWidth={1.4} />
           </div>
-          <div>
+          <div className="relative z-10">
             <h3
               className="font-display font-black uppercase leading-[0.85] tracking-[-0.03em]"
               style={{ fontSize: "clamp(2rem, 5vw, 6rem)" }}
             >
-              Premium
+              The Zone
               <br />
-              <span className="text-molten">Quality.</span>
+              <span className="text-molten">Identity.</span>
             </h3>
             <p className="mt-4 max-w-xl text-base leading-snug text-muted-foreground sm:mt-6 sm:text-lg md:text-2xl">
-              Every device sourced through verified channels. Sealed, warrantied, traceable — never grey market.
+              Phone Zone 2.0 is more than a retail store. We are Dwarka's premier tech showroom, dedicated to bridging the gap between cutting-edge innovation and the end user.
             </p>
           </div>
         </div>
 
         {/* Small top */}
-        <div className="reveal glass relative flex flex-col justify-between overflow-hidden p-5 sm:p-8">
-          <div className="flex items-center justify-between font-mono text-[9px] uppercase tracking-[0.25em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
+        <div className="reveal glass relative flex flex-col items-start gap-6 overflow-hidden p-6 sm:p-8">
+          <div className="flex w-full items-center justify-between font-mono text-[9px] uppercase tracking-[0.25em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
             <span>/02</span>
             <Headphones className="h-6 w-6 text-molten sm:h-8 sm:w-8" strokeWidth={1.4} />
           </div>
           <div>
-            <h3 className="font-display text-2xl font-black uppercase leading-[0.9] tracking-tight sm:text-3xl md:text-5xl">
-              Expert<br />Support.
+            <h3 className="font-display text-2xl font-black uppercase leading-[0.9] tracking-tight sm:text-3xl md:text-4xl">
+              Expert<br />Care.
             </h3>
-            <p className="mt-2 text-sm leading-snug text-muted-foreground sm:mt-3 sm:text-base md:text-xl">
-              Specialists, not salespeople. Real recommendations.
+            <p className="mt-2 text-sm leading-snug text-muted-foreground sm:mt-3 md:text-lg">
+              Flagship repairs and expert consultation to keep your tech at peak performance.
             </p>
           </div>
         </div>
 
         {/* Small bottom */}
-        <div className="reveal glass relative flex flex-col justify-between overflow-hidden p-5 sm:p-8">
-          <div className="flex items-center justify-between font-mono text-[9px] uppercase tracking-[0.25em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
+        <div className="reveal glass relative flex flex-col items-start gap-6 overflow-hidden p-6 sm:p-8">
+          <div className="flex w-full items-center justify-between font-mono text-[9px] uppercase tracking-[0.25em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
             <span>/03</span>
             <BadgeCheck className="h-6 w-6 text-molten sm:h-8 sm:w-8" strokeWidth={1.4} />
           </div>
           <div>
-            <h3 className="font-display text-2xl font-black uppercase leading-[0.9] tracking-tight sm:text-3xl md:text-5xl">
-              Authentic<br />Gear.
+            <h3 className="font-display text-2xl font-black uppercase leading-[0.9] tracking-tight sm:text-3xl md:text-4xl">
+              100%<br />Authentic.
             </h3>
-            <p className="mt-2 text-sm leading-snug text-muted-foreground sm:mt-3 sm:text-base md:text-xl">
-              Every serial verified. Boxes sealed. No exceptions.
+            <p className="mt-2 text-sm leading-snug text-muted-foreground sm:mt-3 md:text-lg">
+              Official brands, verified serials, and sealed boxes. No compromises.
             </p>
           </div>
         </div>

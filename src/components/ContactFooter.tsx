@@ -30,8 +30,13 @@ export function ContactFooter() {
 
         {/* RIGHT */}
         <div className="relative flex flex-col px-4 py-10 sm:px-6 sm:py-12 md:px-12 md:py-16">
-          {/* map placeholder */}
-          <div className="reveal relative mb-6 h-[24svh] w-full overflow-hidden border hairline bg-card sm:mb-8 sm:h-[28svh]">
+          {/* map placeholder (Clickable) */}
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Phone+Zone+2.0+Dwarka+Sector+7+Ramphal+Chowk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="reveal group relative mb-6 block h-[24svh] w-full overflow-hidden border hairline bg-card transition-colors hover:bg-card/60 sm:mb-8 sm:h-[28svh]"
+          >
             <div
               aria-hidden
               className="absolute inset-0 opacity-60"
@@ -43,16 +48,16 @@ export function ContactFooter() {
             />
             <div
               aria-hidden
-              className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-50 blur-2xl"
+              className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-50 blur-2xl transition-transform duration-700 group-hover:scale-125"
               style={{ background: "radial-gradient(circle, var(--molten) 0%, transparent 65%)" }}
             />
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-              <MapPin className="mx-auto h-6 w-6 text-molten sm:h-8 sm:w-8" strokeWidth={1.5} />
+              <MapPin className="mx-auto h-6 w-6 text-molten transition-transform group-hover:scale-110 sm:h-8 sm:w-8" strokeWidth={1.5} />
               <div className="mt-2 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
-                Lagos · Tech Quarter
+                New Delhi · Dwarka ↗
               </div>
             </div>
-          </div>
+          </a>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
             <div className="reveal">
@@ -60,9 +65,9 @@ export function ContactFooter() {
                 Address
               </div>
               <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">
-                221B Signal Avenue<br />
-                District 9, Tech Quarter<br />
-                Lagos, NG
+                Dwarka Sector 7<br />
+                Ramphal Chowk Road<br />
+                New Delhi, 110075
               </p>
             </div>
             <div className="reveal">
@@ -71,8 +76,8 @@ export function ContactFooter() {
               </div>
               <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">
                 Mon — Sat<br />
-                10:00 — 20:00<br />
-                <span className="text-muted-foreground">Sunday — Closed</span>
+                11:00 — 21:00<br />
+                <span className="text-muted-foreground">Sunday — Open (12-8)</span>
               </p>
             </div>
             <div className="reveal">
@@ -80,22 +85,31 @@ export function ContactFooter() {
                 Direct
               </div>
               <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">
-                +234 800 000 2020<br />
-                <a href="mailto:hello@phonezone2.shop" className="text-molten underline-offset-4 hover:underline">
-                  hello@phonezone2.shop
+                +91 99994 44494<br />
+                <a href="mailto:phonezone2.0@gadgetic.in" className="text-molten underline-offset-4 hover:underline">
+                  phonezone2.0@gadgetic.in
                 </a>
               </p>
             </div>
             <div className="reveal">
               <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
-                Channels
+                Legal & Social
               </div>
               <ul className="mt-2 space-y-1 text-base sm:mt-3 sm:text-lg md:text-xl">
-                <li><a href="https://instagram.com/phonezone2.0" target="_blank" rel="noreferrer" className="hover:text-molten">Instagram ↗</a></li>
-                <li><a href="https://tiktok.com/@phonezone2.0" target="_blank" rel="noreferrer" className="hover:text-molten">TikTok ↗</a></li>
-                <li><a href="https://wa.me/2348000002020" target="_blank" rel="noreferrer" className="hover:text-molten">WhatsApp ↗</a></li>
+                <li><a href="/privacy" className="hover:text-molten">Privacy Policy</a></li>
+                <li><a href="/terms" className="hover:text-molten">Terms of Service</a></li>
+                <li><a href="https://wa.me/919999444494" target="_blank" rel="noreferrer" className="text-molten hover:underline">WhatsApp ↗</a></li>
               </ul>
             </div>
+          </div>
+
+          {/* WhatsApp Disclosure */}
+          <div className="reveal mt-12 border-t hairline pt-6 font-mono text-[8px] uppercase tracking-[0.1em] text-muted-foreground sm:text-[9px]">
+            <p>
+              WhatsApp Usage Disclosure: By initiating a chat with us, you agree to receive automated updates and promotional messages.
+              You can opt-out at any time by replying "STOP".
+              Phone Zone 2.0 is a registered retail business in New Delhi.
+            </p>
           </div>
         </div>
       </div>

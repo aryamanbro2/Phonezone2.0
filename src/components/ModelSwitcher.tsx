@@ -2,8 +2,8 @@ import { useModel, type PhoneBrand } from "./ModelContext";
 import { Apple, Smartphone } from "lucide-react";
 
 const OPTIONS: { brand: PhoneBrand; label: string; Icon: typeof Apple }[] = [
-  { brand: "iphone", label: "iPhone Lover", Icon: Apple },
-  { brand: "samsung", label: "Samsung Lover", Icon: Smartphone },
+  { brand: "iphone", label: "iPhone Lover ❤️", Icon: Apple },
+  { brand: "samsung", label: "Samsung Lover 💙", Icon: Smartphone },
 ];
 
 export function ModelSwitcher() {

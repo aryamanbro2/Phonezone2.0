@@ -11,16 +11,16 @@ import { RevealObserver } from "@/components/RevealObserver";
 export const Route = createFileRoute("/")(  {
   head: () => ({
     meta: [
-      { title: "phonezone2.0 — Premium Tech Showroom" },
+      { title: "Phone Zone 2.0 — Premium Tech Showroom Dwarka" },
       {
         name: "description",
         content:
-          "phonezone2.0 — premium in-store showroom for smartphones, laptops, smart TVs and accessories. Visit us — touch the future.",
+          "Phone Zone 2.0 is Dwarka's premier tech showroom. Discover a curated collection of smartphones, accessories, and expert repair services. Visit us for an authentic tech experience.",
       },
-      { property: "og:title", content: "phonezone2.0 — Premium Tech Showroom" },
+      { property: "og:title", content: "Phone Zone 2.0 — Premium Tech Showroom Dwarka" },
       {
         property: "og:description",
-        content: "Editorial showroom for premium smartphones, laptops, smart TVs and accessories.",
+        content: "Editorial showroom for premium smartphones, accessories, and expert repairs in Dwarka, New Delhi.",
       },
     ],
   }),
