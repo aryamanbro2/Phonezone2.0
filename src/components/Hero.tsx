@@ -76,26 +76,46 @@ export function Hero() {
           <HeroModel3D />
         </div>
 
+        {/* interaction hint — contextually placed near the model */}
+        <span className="mt-2 font-mono text-[8px] uppercase tracking-[0.3em] text-molten opacity-70 animate-pulse sm:mt-3 sm:text-[10px]">
+          Drag to rotate
+        </span>
+
         {/* headline */}
         <h2 className="reveal font-display mt-2 text-center text-xl font-black uppercase tracking-[0.14em] sm:mt-4 sm:text-2xl md:mt-6 md:text-3xl md:tracking-[0.18em]">
           Premium <span className="text-molten">Tech</span> Experience.
         </h2>
 
         {/* model switcher */}
-        <div className="mt-4 sm:mt-6">
+        <div className="mt-6 sm:mt-8">
           <ModelSwitcher />
+        </div>
+
+        {/* mobile-only CTA — part of the flow to prevent overlap */}
+        <div className="mt-10 flex flex-col items-center gap-5 font-mono md:hidden">
+          <a
+            href="#showcase"
+            className="reveal group btn-premium z-10 inline-flex items-center gap-3 border border-molten bg-molten px-8 py-3.5 text-[11px] font-bold tracking-[0.3em] text-primary-foreground transition-colors hover:bg-transparent hover:text-molten"
+          >
+            Explore Collection
+            <span className="transition-transform group-hover:translate-x-1">→</span>
+          </a>
+
+          <a href="#contact" className="z-10 text-[10px] font-mono uppercase tracking-[0.2em] text-foreground underline-offset-8 hover:text-molten hover:underline">
+            Visit Store ↗
+          </a>
         </div>
       </div>
 
-      {/* bottom CTA bar */}
-      <div className="absolute bottom-16 left-4 right-4 z-20 flex flex-col items-center justify-between gap-6 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-xs sm:tracking-[0.25em] md:bottom-10 md:left-12 md:right-12 md:flex-row">
-        <span className="text-center text-[8px] sm:text-[10px] md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
-          {brand === "iphone" ? "🍎 iPhone Lover ❤️" : "📱 Samsung Lover 💙"} · Drag to rotate
+      {/* bottom CTA bar — desktop only */}
+      <div className="absolute bottom-10 left-12 right-12 z-20 hidden items-center justify-between font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground md:flex">
+        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-[10px]">
+          {brand === "iphone" ? "Obsidian Luxe" : "Neon Velocity"} · PZ 2.0
         </span>
 
         <a
           href="#showcase"
-          className="reveal group btn-premium z-10 inline-flex items-center gap-3 border border-molten bg-molten px-5 py-2.5 text-[10px] font-bold tracking-[0.3em] text-primary-foreground transition-colors hover:bg-transparent hover:text-molten sm:px-6 sm:py-3 sm:text-[11px]"
+          className="reveal group btn-premium z-10 inline-flex items-center gap-3 border border-molten bg-molten px-6 py-3 text-[11px] font-bold tracking-[0.3em] text-primary-foreground transition-colors hover:bg-transparent hover:text-molten"
         >
           Explore Collection
           <span className="transition-transform group-hover:translate-x-1">→</span>
