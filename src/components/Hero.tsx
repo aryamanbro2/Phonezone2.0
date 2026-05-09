@@ -57,9 +57,8 @@ export function Hero() {
 
       {/* top status bar */}
       <div className="absolute left-4 right-4 top-4 z-20 flex items-center justify-between font-mono text-[8px] uppercase tracking-[0.25em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em] md:left-12 md:right-12 md:top-6">
-        <span><span className="text-molten">●</span>&nbsp;&nbsp;Premium Showroom · Dwarka</span>
+        <span className="pl-14 sm:pl-0"><span className="text-molten">●</span>&nbsp;&nbsp;Phone Zone 2.0 · Dwarka</span>
         <span className="hidden md:inline">Editorial Index / 2026</span>
-        <span className="hidden sm:inline">Lat 28.58 · Lon 77.06</span>
       </div>
 
       {/* central device — 3D model */}
@@ -94,7 +93,7 @@ export function Hero() {
           Explore Collection
           <span className="transition-transform group-hover:translate-x-1">→</span>
         </a>
-        
+
         <span className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 text-center md:block">
           {brand === "iphone" ? "🍎 iPhone Lover ❤️" : "📱 Samsung Lover 💙"} · Drag to rotate
         </span>

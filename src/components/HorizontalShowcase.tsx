@@ -69,7 +69,7 @@ export function HorizontalShowcase() {
 
         {/* heading overlay */}
         <div className="absolute left-4 right-4 top-4 z-20 flex items-center justify-between font-mono text-[8px] uppercase tracking-[0.25em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em] md:left-12 md:right-12 md:top-6">
-          <span><span className="text-molten">/02</span> — Showcase</span>
+          <span className="pl-14 sm:pl-0"><span className="text-molten">/02</span> — Showcase</span>
           <span className="hidden md:inline">Scroll vertically to pan →</span>
           <span>{String((hovered ?? 0) + 1).padStart(2, "0")} / {String(slides.length).padStart(2, "0")}</span>
         </div>

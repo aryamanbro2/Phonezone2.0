@@ -2,7 +2,7 @@ import { ShieldCheck, Headphones, BadgeCheck, Sparkles } from "lucide-react";
 
 export function BentoSpecs() {
   return (
-    <section id="doctrine" className="bento-section flex min-h-screen snap-start snap-always flex-col bg-background px-4 py-12 sm:px-6 sm:py-16 md:px-12 md:py-20">
+    <section id="doctrine" className="bento-section flex min-h-screen snap-start snap-always flex-col bg-background px-4 pt-12 pb-24 sm:px-6 sm:py-16 md:px-12 md:py-20">
       <div className="reveal mb-6 flex items-end justify-between sm:mb-8">
         <div>
           <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-molten sm:text-[10px] sm:tracking-[0.3em]">
@@ -42,7 +42,7 @@ export function BentoSpecs() {
               <span className="text-molten">Identity.</span>
             </h3>
             <p className="mt-4 max-w-xl text-base leading-snug text-muted-foreground sm:mt-6 sm:text-lg md:text-2xl">
-              Phone Zone 2.0 is more than a retail store. We are Dwarka's premier tech showroom, dedicated to bridging the gap between cutting-edge innovation and the end user.
+              Phone Zone 2.0 is Dwarka's premier tech showroom. We specialize in the latest Smartphones, Premium Accessories, and Flagship Repairs, bridging the gap between innovation and the end user.
             </p>
           </div>
         </div>

@@ -1,4 +1,8 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { SideRail } from "@/components/SideRail";
+import { ModelProvider } from "@/components/ModelContext";
+import { RevealObserver } from "@/components/RevealObserver";
+import { CustomCursor } from "@/components/CustomCursor";
 
 import appCss from "../styles.css?url";
 
@@ -29,14 +33,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "phonezone2.0" },
-      { name: "description", content: "Premium tech showroom — smartphones, laptops, smart TVs & accessories." },
-      { name: "author", content: "phonezone2.0" },
-      { property: "og:title", content: "phonezone2.0" },
-      { property: "og:description", content: "Premium tech showroom — visit us in-store." },
+      { title: "Phone Zone 2.0 | Premium Tech Showroom & Expert Repairs in Dwarka" },
+      { name: "description", content: "Phone Zone 2.0 is your destination for authentic smartphones, premium mobile accessories, and expert tech repairs in Dwarka." },
+      { name: "author", content: "Phone Zone 2.0" },
+      { property: "og:title", content: "Phone Zone 2.0 | Tech Showroom" },
+      { property: "og:description", content: "Dwarka's premier tech showroom for smartphones, accessories, and repairs." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -68,5 +71,16 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <ModelProvider>
+      <div className="relative min-h-screen bg-background text-foreground">
+        <RevealObserver />
+        <CustomCursor />
+        <SideRail />
+        <main className="pb-16 md:pb-0 md:pl-[max(72px,8vw)]">
+          <Outlet />
+        </main>
+      </div>
+    </ModelProvider>
+  );
 }

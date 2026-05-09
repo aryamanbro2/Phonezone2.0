@@ -29,18 +29,11 @@ export const Route = createFileRoute("/")(  {
 
 function Index() {
   return (
-    <ModelProvider>
-      <div className="relative min-h-screen bg-background text-foreground">
-        <RevealObserver />
-        <CustomCursor />
-        <SideRail />
-        <main className="pb-16 md:pb-0 md:pl-[max(72px,8vw)]">
-          <Hero />
-          <HorizontalShowcase />
-          <BentoSpecs />
-          <ContactFooter />
-        </main>
-      </div>
-    </ModelProvider>
+    <>
+      <Hero />
+      <HorizontalShowcase />
+      <BentoSpecs />
+      <ContactFooter />
+    </>
   );
 }

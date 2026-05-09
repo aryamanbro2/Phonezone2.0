@@ -26,8 +26,7 @@ export function ModelSwitcher() {
           className={`model-switcher__btn ${brand === b ? "model-switcher__btn--active" : ""}`}
         >
           <Icon className="h-4 w-4 shrink-0" strokeWidth={1.6} />
-          <span className="hidden sm:inline">{label}</span>
-          <span className="sm:hidden">{b === "iphone" ? "iPhone" : "Samsung"}</span>
+          <span>{label}</span>
         </button>
       ))}
     </div>

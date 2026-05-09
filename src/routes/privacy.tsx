@@ -6,8 +6,7 @@ export const Route = createFileRoute("/privacy")({
 
 function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-background text-foreground px-6 py-20 md:px-24">
-      <div className="max-w-4xl mx-auto">
+    <div className="px-6 py-20 md:px-24 max-w-4xl">
         <Link to="/" className="font-mono text-xs uppercase tracking-widest text-molten hover:underline mb-12 inline-block">
           ← Back to Showroom
         </Link>
@@ -46,11 +45,10 @@ function PrivacyPolicy() {
           <section>
             <h2 className="text-foreground text-xl font-bold uppercase tracking-wider mb-4">5. Contact Us</h2>
             <p>
-              For any privacy-related queries, please contact us at <span className="text-molten">info@phonezone.com</span>.
+              For any privacy-related queries, please contact us at <span className="text-molten">info@phonezone2.com</span>.
             </p>
           </section>
         </div>
       </div>
-    </div>
   );
 }

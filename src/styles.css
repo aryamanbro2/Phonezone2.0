@@ -168,8 +168,7 @@
   @media (min-width: 768px) {
     .bento-section {
       min-height: 100svh;
-      height: 100svh;
-      overflow: hidden;
+      position: relative;
     }
   }
 
@@ -183,8 +182,7 @@
   @media (min-width: 768px) {
     .contact-section {
       min-height: 100svh;
-      height: 100svh;
-      overflow: hidden;
+      position: relative;
       padding-bottom: 0;
     }
   }

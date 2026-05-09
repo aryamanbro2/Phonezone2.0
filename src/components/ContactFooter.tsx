@@ -5,7 +5,7 @@ export function ContactFooter() {
     <footer id="contact" className="contact-section flex min-h-screen snap-start snap-always flex-col bg-background">
       <div className="grid flex-1 grid-cols-1 md:grid-cols-2">
         {/* LEFT */}
-        <div className="relative flex flex-col justify-between border-b hairline px-4 py-10 sm:px-6 sm:py-12 md:border-b-0 md:border-r md:px-12 md:py-16">
+        <div className="relative flex flex-col justify-between border-b hairline px-4 py-16 sm:px-6 sm:py-20 md:border-b-0 md:border-r md:px-12 md:py-16">
           <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-molten sm:text-[10px] sm:tracking-[0.3em]">
             /04 — Coordinates
           </div>
@@ -29,7 +29,7 @@ export function ContactFooter() {
         </div>
 
         {/* RIGHT */}
-        <div className="relative flex flex-col px-4 py-10 sm:px-6 sm:py-12 md:px-12 md:py-16">
+        <div className="relative flex flex-col px-4 py-16 sm:px-6 sm:py-20 md:px-12 md:py-16">
           {/* map placeholder (Clickable) */}
           <a
             href="https://www.google.com/maps/search/?api=1&query=Phone+Zone+2.0+Dwarka+Sector+7+Ramphal+Chowk"
@@ -59,7 +59,7 @@ export function ContactFooter() {
             </div>
           </a>
 
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-12">
             <div className="reveal">
               <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
                 Address
@@ -86,8 +86,8 @@ export function ContactFooter() {
               </div>
               <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">
                 +91 99994 44494<br />
-                <a href="mailto:phonezone2.0@gadgetic.in" className="text-molten underline-offset-4 hover:underline">
-                  phonezone2.0@gadgetic.in
+                <a href="mailto:info@phonezone2.com" className="text-molten underline-offset-4 hover:underline">
+                  info@phonezone2.com
                 </a>
               </p>
             </div>

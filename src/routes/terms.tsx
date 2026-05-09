@@ -6,8 +6,7 @@ export const Route = createFileRoute("/terms")({
 
 function TermsConditions() {
   return (
-    <div className="min-h-screen bg-background text-foreground px-6 py-20 md:px-24">
-      <div className="max-w-4xl mx-auto">
+    <div className="px-6 py-20 md:px-24 max-w-4xl">
         <Link to="/" className="font-mono text-xs uppercase tracking-widest text-molten hover:underline mb-12 inline-block">
           ← Back to Showroom
         </Link>
@@ -51,6 +50,5 @@ function TermsConditions() {
           </section>
         </div>
       </div>
-    </div>
   );
 }
