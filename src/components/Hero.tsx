@@ -88,7 +88,11 @@ export function Hero() {
       </div>
 
       {/* bottom CTA bar */}
-      <div className="absolute bottom-20 left-4 right-4 z-20 flex flex-col items-center justify-between gap-8 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-xs sm:tracking-[0.25em] md:bottom-10 md:left-12 md:right-12 md:flex-row">
+      <div className="absolute bottom-16 left-4 right-4 z-20 flex flex-col items-center justify-between gap-6 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-xs sm:tracking-[0.25em] md:bottom-10 md:left-12 md:right-12 md:flex-row">
+        <span className="text-center text-[8px] sm:text-[10px] md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
+          {brand === "iphone" ? "🍎 iPhone Lover ❤️" : "📱 Samsung Lover 💙"} · Drag to rotate
+        </span>
+
         <a
           href="#showcase"
           className="reveal group btn-premium z-10 inline-flex items-center gap-3 border border-molten bg-molten px-5 py-2.5 text-[10px] font-bold tracking-[0.3em] text-primary-foreground transition-colors hover:bg-transparent hover:text-molten sm:px-6 sm:py-3 sm:text-[11px]"
@@ -96,10 +100,6 @@ export function Hero() {
           Explore Collection
           <span className="transition-transform group-hover:translate-x-1">→</span>
         </a>
-
-        <span className="text-center text-[8px] sm:text-[10px] md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
-          {brand === "iphone" ? "🍎 iPhone Lover ❤️" : "📱 Samsung Lover 💙"} · Drag to rotate
-        </span>
 
         <a href="#contact" className="z-10 text-foreground underline-offset-8 hover:text-molten hover:underline">
           Visit Store ↗

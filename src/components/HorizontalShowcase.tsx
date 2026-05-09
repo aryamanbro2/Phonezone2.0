@@ -99,7 +99,7 @@ export function HorizontalShowcase() {
               <img
                 src={s.img}
                 alt={s.name}
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1400ms] ease-[cubic-bezier(.2,.8,.2,1)] group-hover:scale-105"
+                className="absolute inset-0 h-full w-full object-contain p-8 transition-transform duration-[1400ms] ease-[cubic-bezier(.2,.8,.2,1)] group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
 
