@@ -1,5 +1,6 @@
 import { Home, LayoutGrid, MapPin, Sparkles } from "lucide-react";
 import { useModel } from "./ModelContext";
+import logo from "@/assets/logo.png";
 
 const links = [
   { id: "home", label: "Home", Icon: Home },
@@ -26,7 +27,7 @@ export function SideRail() {
           />
           
           <img 
-            src="/src/assets/logo.png" 
+            src={logo} 
             alt="Phone Zone 2.0" 
             className="relative z-10 h-full w-full object-contain brightness-110"
           />
@@ -39,7 +40,7 @@ export function SideRail() {
         <div className="hidden flex-col items-center gap-2 md:flex md:mb-8">
           <a href="#home" className="relative block h-12 w-auto overflow-hidden sm:h-16">
             <img 
-              src="/src/assets/logo.png" 
+              src={logo} 
               alt="Phone Zone 2.0" 
               className="h-full w-auto object-contain brightness-110 contrast-125"
             />

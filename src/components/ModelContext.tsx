@@ -22,20 +22,22 @@ const MODEL_PATHS: Record<PhoneBrand, string> = {
  */
 const THEME_TOKENS: Record<PhoneBrand, Record<string, string>> = {
   iphone: {
-    "--molten": "oklch(0.62 0.19 255)",   // Apple-ish blue
-    "--gold": "oklch(0.62 0.19 255)",
-    "--ring": "oklch(0.62 0.19 255)",
-    "--accent": "oklch(0.62 0.19 255)",
-    "--primary": "oklch(0.62 0.19 255)",
-    "--volt": "oklch(0.82 0.18 195)",       // teal glow
+    "--molten": "oklch(0.7 0.18 45)",       // Molten Orange/Gold
+    "--gold": "oklch(0.7 0.18 45)",
+    "--ring": "oklch(0.7 0.18 45)",
+    "--accent": "oklch(0.7 0.18 45)",
+    "--primary": "oklch(0.7 0.18 45)",
+    "--volt": "oklch(0.85 0.1 90)",         // Warm highlight
+    "--glow-opacity": "0.4",
   },
   samsung: {
-    "--molten": "oklch(0.58 0.24 290)",    // Galaxy violet
-    "--gold": "oklch(0.58 0.24 290)",
-    "--ring": "oklch(0.58 0.24 290)",
-    "--accent": "oklch(0.58 0.24 290)",
-    "--primary": "oklch(0.58 0.24 290)",
-    "--volt": "oklch(0.78 0.22 270)",       // lighter violet glow
+    "--molten": "oklch(0.78 0.18 145)",     // Android Green
+    "--gold": "oklch(0.78 0.18 145)",
+    "--ring": "oklch(0.78 0.18 145)",
+    "--accent": "oklch(0.78 0.18 145)",
+    "--primary": "oklch(0.78 0.18 145)",
+    "--volt": "oklch(0.85 0.25 160)",       // Electric Lime/Cyan glow
+    "--glow-opacity": "0.8",
   },
 };
 

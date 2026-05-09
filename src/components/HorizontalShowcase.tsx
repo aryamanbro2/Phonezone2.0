@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import phones from "@/assets/cat-smartphones.jpg";
-import laptops from "@/assets/cat-laptops.jpg";
-import tvs from "@/assets/cat-tvs.jpg";
-import accessories from "@/assets/cat-accessories.jpg";
+import phones from "@/assets/smartphones.jpg";
+import laptops from "@/assets/laptops.jpg";
+import tvs from "@/assets/smart_tvs.jpg";
+import accessories from "@/assets/accessories.png";
 
 const slides = [
   { idx: "01", name: "Smartphones", tag: "Flagships · Apple · Samsung", img: phones },

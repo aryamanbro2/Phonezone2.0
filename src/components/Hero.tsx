@@ -42,15 +42,18 @@ export function Hero() {
       {/* ambient glow — shifts color based on brand */}
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[70vmin] w-[70vmin] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40 blur-3xl transition-all duration-1000"
-        style={{ background: "radial-gradient(circle, var(--molten) 0%, transparent 60%)" }}
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[70vmin] w-[70vmin] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl transition-all duration-1000"
+        style={{
+          background: "radial-gradient(circle, var(--molten) 0%, transparent 60%)",
+          opacity: "var(--glow-opacity, 0.4)"
+        }}
       />
 
       {/* outline brand text behind */}
       <h1
         aria-hidden
-        className="font-display pointer-events-none absolute inset-0 flex items-center justify-center text-stroke-soft text-center font-black uppercase leading-none tracking-[-0.05em] whitespace-nowrap select-none"
-        style={{ fontSize: "clamp(3rem, 13vw, 22rem)" }}
+        className="font-display pointer-events-none absolute inset-0 flex items-center justify-center text-stroke-soft text-center font-black uppercase leading-[0.8] whitespace-normal select-none"
+        style={{ fontSize: "clamp(3rem, 11vw, 18rem)" }}
       >
         PHONE ZONE 2.0
       </h1>
@@ -85,16 +88,16 @@ export function Hero() {
       </div>
 
       {/* bottom CTA bar */}
-      <div className="absolute bottom-24 left-4 right-4 z-20 flex flex-col items-center justify-between gap-3 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-xs sm:tracking-[0.25em] md:bottom-10 md:left-12 md:right-12 md:flex-row">
+      <div className="absolute bottom-20 left-4 right-4 z-20 flex flex-col items-center justify-between gap-8 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-xs sm:tracking-[0.25em] md:bottom-10 md:left-12 md:right-12 md:flex-row">
         <a
           href="#showcase"
-          className="reveal group z-10 inline-flex items-center gap-3 border border-molten bg-molten px-5 py-2.5 text-[10px] font-bold tracking-[0.3em] text-primary-foreground transition-colors hover:bg-transparent hover:text-molten sm:px-6 sm:py-3 sm:text-[11px]"
+          className="reveal group btn-premium z-10 inline-flex items-center gap-3 border border-molten bg-molten px-5 py-2.5 text-[10px] font-bold tracking-[0.3em] text-primary-foreground transition-colors hover:bg-transparent hover:text-molten sm:px-6 sm:py-3 sm:text-[11px]"
         >
           Explore Collection
           <span className="transition-transform group-hover:translate-x-1">→</span>
         </a>
 
-        <span className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 text-center md:block">
+        <span className="text-center text-[8px] sm:text-[10px] md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
           {brand === "iphone" ? "🍎 iPhone Lover ❤️" : "📱 Samsung Lover 💙"} · Drag to rotate
         </span>
 

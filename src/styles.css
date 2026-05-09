@@ -144,6 +144,12 @@
   .text-stroke-soft {
     -webkit-text-stroke: 1px oklch(1 0 0 / 14%);
     color: transparent;
+    transition: -webkit-text-stroke 600ms ease;
+  }
+  
+  [data-brand="samsung"] .text-stroke-soft {
+    -webkit-text-stroke: 1px oklch(0.78 0.18 145 / 30%);
+    filter: drop-shadow(0 0 10px oklch(0.78 0.18 145 / 20%));
   }
 
   /* ── Hero section — auto-height on mobile, locked on desktop ── */
@@ -207,12 +213,41 @@
     transform: translateY(0);
   }
 
-  /* glassmorphism for bento */
+  /* glassmorphism — brand sensitive */
   .glass {
     background: color-mix(in oklab, var(--card) 70%, transparent);
     backdrop-filter: blur(18px) saturate(140%);
     -webkit-backdrop-filter: blur(18px) saturate(140%);
     border: 1px solid oklch(1 0 0 / 8%);
+    transition: all 600ms cubic-bezier(.2,.8,.2,1);
+  }
+
+  [data-brand="iphone"] .glass {
+    background: color-mix(in oklab, var(--background) 40%, transparent);
+    border: 1px solid oklch(1 0 0 / 5%);
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5);
+  }
+
+  [data-brand="samsung"] .glass {
+    background: color-mix(in oklab, var(--card) 60%, transparent);
+    border: 1px solid oklch(0.78 0.18 145 / 15%);
+    box-shadow: 0 0 30px -10px oklch(0.78 0.18 145 / 10%);
+  }
+
+  /* Typography shifts */
+  [data-brand="iphone"] h1, 
+  [data-brand="iphone"] h2, 
+  [data-brand="iphone"] h3 {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+
+  [data-brand="samsung"] h1, 
+  [data-brand="samsung"] h2, 
+  [data-brand="samsung"] h3 {
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    font-style: italic;
   }
 
   /* legacy showcase dim */
@@ -436,4 +471,29 @@ html.lenis, html.lenis body { height: auto; }
 .reveal.is-in .text-fill-anim,
 .reveal.is-in.text-fill-anim {
   background-position: 0 0;
+}
+
+/* ── Brand Specific Glows ── */
+[data-brand="samsung"] .group:hover .glass {
+  border-color: var(--molten);
+  box-shadow: 0 0 20px oklch(0.78 0.18 145 / 30%);
+}
+
+[data-brand="iphone"] button, 
+[data-brand="iphone"] .group:hover {
+  transition: all 400ms ease;
+}
+
+/* ── Interactive highlights ── */
+.btn-premium {
+  @apply relative overflow-hidden transition-all duration-500;
+}
+
+[data-brand="iphone"] .btn-premium:hover {
+  box-shadow: 0 0 20px oklch(0.7 0.18 45 / 40%);
+}
+
+[data-brand="samsung"] .btn-premium:hover {
+  box-shadow: 0 0 30px oklch(0.78 0.18 145 / 60%);
+  border-color: var(--volt);
 }

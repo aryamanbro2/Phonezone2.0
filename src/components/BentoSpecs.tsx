@@ -81,7 +81,7 @@ export function BentoSpecs() {
       </div>
 
       <div className="reveal mt-4 flex items-center justify-between font-mono text-[8px] uppercase tracking-[0.2em] text-muted-foreground sm:mt-6 sm:text-[10px] sm:tracking-[0.3em]">
-        <span className="flex items-center gap-2"><Sparkles className="h-3 w-3 text-molten" /> Hand-curated since 2024</span>
+        <span className="flex items-center gap-2"><Sparkles className="h-3 w-3 text-molten" /> Hand-curated since 2010</span>
         <a href="#contact" className="hover:text-molten">Visit the floor →</a>
       </div>
     </section>
