@@ -7,7 +7,7 @@ export function ContactFooter() {
         {/* LEFT */}
         <div className="relative flex flex-col justify-between border-b hairline px-4 py-16 sm:px-6 sm:py-20 md:border-b-0 md:border-r md:px-12 md:py-16">
           <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-molten sm:text-[10px] sm:tracking-[0.3em]">
-            /04 — Coordinates
+            /05 — Coordinates
           </div>
 
           <h2
@@ -32,7 +32,7 @@ export function ContactFooter() {
         <div className="relative flex flex-col px-4 py-16 sm:px-6 sm:py-20 md:px-12 md:py-16">
           {/* map placeholder (Clickable) */}
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Phone+Zone+2.0+Dwarka+Sector+7+Ramphal+Chowk"
+            href="https://maps.google.com/?q=Plot+149,+Ramphal+Chowk,+Sector+7,+Dwarka,+New+Delhi"
             target="_blank"
             rel="noopener noreferrer"
             className="reveal group relative mb-6 block h-[24svh] w-full overflow-hidden border hairline bg-card transition-colors hover:bg-card/60 sm:mb-8 sm:h-[28svh]"
@@ -54,7 +54,7 @@ export function ContactFooter() {
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
               <MapPin className="mx-auto h-6 w-6 text-molten transition-transform group-hover:scale-110 sm:h-8 sm:w-8" strokeWidth={1.5} />
               <div className="mt-2 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
-                New Delhi · Dwarka ↗
+                Plot 149 · Ramphal Chowk ↗
               </div>
             </div>
           </a>
@@ -65,8 +65,8 @@ export function ContactFooter() {
                 Address
               </div>
               <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">
-                Dwarka Sector 7<br />
-                Ramphal Chowk Road<br />
+                Plot 149, Ramphal Chowk<br />
+                Sector 7, Dwarka<br />
                 New Delhi, 110075
               </p>
             </div>
@@ -75,19 +75,21 @@ export function ContactFooter() {
                 Hours
               </div>
               <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">
-                Mon — Sat<br />
-                11:00 — 21:00<br />
-                <span className="text-muted-foreground">Sunday — Open (12-8)</span>
+                Mon — Sun<br />
+                11:00 — 21:00
               </p>
             </div>
             <div className="reveal">
               <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
-                Direct
+                Direct Lines
               </div>
-              <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">
+              <p className="mt-2 text-sm leading-snug sm:mt-3 sm:text-base md:text-lg">
                 +91 99994 44494<br />
-                <a href="mailto:info@phonezone2.com" className="text-molten underline-offset-4 hover:underline">
-                  info@phonezone2.com
+                +91 99994 44394<br />
+                +91 92127 73773<br />
+                +91 75299 99333<br />
+                <a href="mailto:phonezone2.0@gadgetic.in" className="mt-1 inline-block text-molten underline-offset-4 hover:underline break-all">
+                  phonezone2.0@gadgetic.in
                 </a>
               </p>
             </div>
@@ -103,12 +105,10 @@ export function ContactFooter() {
             </div>
           </div>
 
-          {/* WhatsApp Disclosure */}
+          {/* WhatsApp API Compliant Disclosure */}
           <div className="reveal mt-12 border-t hairline pt-6 font-mono text-[8px] uppercase tracking-[0.1em] text-muted-foreground sm:text-[9px]">
             <p>
-              WhatsApp Usage Disclosure: By initiating a chat with us, you agree to receive automated updates and promotional messages.
-              You can opt-out at any time by replying "STOP".
-              Phone Zone 2.0 is a registered retail business in New Delhi.
+              <strong>WhatsApp Opt-In Notice:</strong> By clicking our WhatsApp link and initiating a conversation, you explicitly consent to receive customer support, account updates, and promotional communications from Phone Zone 2.0 via WhatsApp. You may opt-out at any time by replying "STOP". Phone Zone 2.0 is an authorized reseller and registered retail business in New Delhi.
             </p>
           </div>
         </div>

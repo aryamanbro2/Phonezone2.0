@@ -7,8 +7,8 @@ import { ContactFooter } from "@/components/ContactFooter";
 import { CustomCursor } from "@/components/CustomCursor";
 import { ModelProvider } from "@/components/ModelContext";
 import { RevealObserver } from "@/components/RevealObserver";
-
-export const Route = createFileRoute("/")(  {
+import { AboutSection } from "@/components/AboutSection";
+export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Phone Zone 2.0 — Premium Tech Showroom Dwarka" },
@@ -33,6 +33,7 @@ function Index() {
       <Hero />
       <HorizontalShowcase />
       <BentoSpecs />
+      <AboutSection />
       <ContactFooter />
     </>
   );
