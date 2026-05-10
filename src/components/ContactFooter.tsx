@@ -32,7 +32,7 @@ export function ContactFooter() {
         <div className="relative flex flex-col px-4 py-16 sm:px-6 sm:py-20 md:px-12 md:py-16">
           {/* map placeholder (Clickable) */}
           <a
-            href="https://maps.google.com/?q=Plot+149,+Ramphal+Chowk,+Sector+7,+Dwarka,+New+Delhi"
+            href="https://www.google.com/maps/place/Phone+Zone+2.0/@28.5884543,77.0689017,17z/data=!3m2!4b1!5s0x390d1b3da52094c9:0xc2328c9ecdf15726!4m6!3m5!1s0x390d1bb86c56d92f:0x4e9e0d4f61c9660a!8m2!3d28.5884496!4d77.0714766!16s%2Fg%2F11tp38zyr3?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="reveal group relative mb-6 block h-[24svh] w-full overflow-hidden border hairline bg-card transition-colors hover:bg-card/60 sm:mb-8 sm:h-[28svh]"
@@ -54,7 +54,7 @@ export function ContactFooter() {
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
               <MapPin className="mx-auto h-6 w-6 text-molten transition-transform group-hover:scale-110 sm:h-8 sm:w-8" strokeWidth={1.5} />
               <div className="mt-2 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
-                Plot 149 · Ramphal Chowk ↗
+                Phone Zone 2.0 ↗
               </div>
             </div>
           </a>
