@@ -24,7 +24,9 @@ function TermsConditions() {
           <section>
             <h2 className="text-foreground text-xl font-bold uppercase tracking-wider mb-4">2. Warranty & Service</h2>
             <p>
-              Products carry official brand warranties unless otherwise stated. Our in-house repair services are performed by certified technicians using premium components.
+              Products carry official brand warranties unless otherwise stated. Our mobile repair services are provided by experienced technicians.
+Service availability, parts used, pricing and applicable warranty terms
+are communicated to the customer before the service is completed.
             </p>
           </section>
 
