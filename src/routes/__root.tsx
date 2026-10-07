@@ -44,6 +44,28 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CellPhoneStore",
+          name: "Phone Zone 2.0",
+          url: "https://phonezone20.vercel.app/",
+          telephone: "+91 99994 44494",
+          description: "Mobile phone store, accessories retailer and mobile repair shop in Sector 7, Dwarka, New Delhi.",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Plot No. 149, Ramphal Chowk Road, Beside SBI Bank, Palam Extension, Sector 7, Dwarka",
+            addressLocality: "New Delhi",
+            postalCode: "110075",
+            addressCountry: "IN"
+          },
+          openingHours: "Mo-Su 11:00-21:30",
+          areaServed: "Dwarka, New Delhi"
+        })
+      }
+    ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
