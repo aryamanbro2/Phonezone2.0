@@ -12,16 +12,16 @@ import { BusinessInfo } from "@/components/BusinessInfo";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Phone Zone 2.0 — Premium Tech Showroom Dwarka" },
+      { title: "Phone Zone 2.0 | Mobile Phones, Accessories & Repairs in Dwarka" },
       {
         name: "description",
         content:
-          "Phone Zone 2.0 is Dwarka's premier tech showroom. Discover a curated collection of smartphones, accessories, and expert repair services. Visit us for an authentic tech experience.",
+          "Phone Zone 2.0 is a local mobile phone store in Sector 7, Dwarka, New Delhi. Shop smartphones and accessories, or visit the store for mobile repair enquiries and device support.",
       },
       { property: "og:title", content: "Phone Zone 2.0 — Premium Tech Showroom Dwarka" },
       {
         property: "og:description",
-        content: "Editorial showroom for premium smartphones, accessories, and expert repairs in Dwarka, New Delhi.",
+        content: "Mobile phones, accessories and repair services from Phone Zone 2.0 in Dwarka, New Delhi.",
       },
     ],
   }),

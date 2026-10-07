@@ -1,4 +1,5 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import type { ReactNode } from "react";
 import { SideRail } from "@/components/SideRail";
 import { ModelProvider } from "@/components/ModelContext";
 import { RevealObserver } from "@/components/RevealObserver";
@@ -33,13 +34,37 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Phone Zone 2.0 | Premium Tech Showroom & Expert Repairs in Dwarka" },
-      { name: "description", content: "Phone Zone 2.0 is your destination for authentic smartphones, premium mobile accessories, and expert tech repairs in Dwarka." },
+      { title: "Phone Zone 2.0 | Mobile Phones, Accessories & Repairs in Dwarka" },
+      { name: "description", content: "Phone Zone 2.0 is a mobile phone store, accessories retailer and mobile repair shop in Sector 7, Dwarka, New Delhi." },
+      { name: "robots", content: "index, follow" },
+      
       { name: "author", content: "Phone Zone 2.0" },
-      { property: "og:title", content: "Phone Zone 2.0 | Tech Showroom" },
-      { property: "og:description", content: "Dwarka's premier tech showroom for smartphones, accessories, and repairs." },
+      { property: "og:title", content: "Phone Zone 2.0 | Mobile Phones, Accessories & Repairs" },
+      { property: "og:description", content: "Visit Phone Zone 2.0 in Sector 7, Dwarka for smartphones, mobile accessories and mobile repair services." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CellPhoneStore",
+          name: "Phone Zone 2.0",
+          url: "https://phonezone20.vercel.app/",
+          telephone: "+91 99994 44494",
+          description: "Mobile phone store, accessories retailer and mobile repair shop in Sector 7, Dwarka, New Delhi.",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Plot No. 149, Ramphal Chowk Road, Beside SBI Bank, Palam Extension, Sector 7, Dwarka",
+            addressLocality: "New Delhi",
+            postalCode: "110075",
+            addressCountry: "IN"
+          },
+          openingHours: "Mo-Su 11:00-21:30",
+          areaServed: "Dwarka, New Delhi"
+        })
+      }
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -56,7 +81,7 @@ export const Route = createRootRoute({
   notFoundComponent: NotFoundComponent,
 });
 
-function RootShell({ children }: { children: React.ReactNode }) {
+function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
