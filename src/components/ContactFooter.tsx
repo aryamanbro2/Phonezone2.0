@@ -7,7 +7,7 @@ export function ContactFooter() {
         {/* LEFT */}
         <div className="relative flex flex-col justify-between border-b hairline px-4 py-16 sm:px-6 sm:py-20 md:border-b-0 md:border-r md:px-12 md:py-16">
           <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-molten sm:text-[10px] sm:tracking-[0.3em]">
-            /05 — Coordinates
+            /05 — Contact & location
           </div>
 
           <h2
@@ -22,7 +22,7 @@ export function ContactFooter() {
           <div className="flex items-end justify-between gap-4 font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-xs sm:tracking-[0.3em]">
             <span className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-volt shadow-[0_0_10px_var(--volt)]" />
-              Open now
+              Store hours: 11:00–21:30
             </span>
             <span className="hidden sm:inline">© 2026 phonezone<span className="text-molten">2.0</span></span>
           </div>
@@ -124,7 +124,7 @@ export function ContactFooter() {
           {/* WhatsApp API Compliant Disclosure */}
           <div className="reveal mt-12 border-t hairline pt-6 font-mono text-[8px] uppercase tracking-[0.1em] text-muted-foreground sm:text-[9px]">
             <p>
-              <strong>WhatsApp Opt-In Notice:</strong> By clicking our WhatsApp link and initiating a conversation, you explicitly consent to receive customer support, account updates, and promotional communications from Phone Zone 2.0 via WhatsApp. You may opt-out at any time by replying "STOP". Phone Zone 2.0 is an authorized reseller and registered retail business in New Delhi.
+              For current stock, pricing, repair eligibility and service turnaround, please contact the store directly.
             </p>
           </div>
         </div>
