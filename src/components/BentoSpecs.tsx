@@ -42,8 +42,11 @@ export function BentoSpecs() {
               <span className="text-molten">Identity.</span>
             </h3>
             <p className="mt-4 max-w-xl text-base leading-snug text-muted-foreground sm:mt-6 sm:text-lg md:text-2xl">
-              Phone Zone 2.0 is Dwarka's premier tech showroom. We specialize in the latest Smartphones, Premium Accessories, and Flagship Repairs, bridging the gap between innovation and the end user.
-            </p>
+  Phone Zone 2.0 is a multi-brand mobile and electronics retail store
+  in Sector 7, Dwarka, New Delhi. We offer smartphones, mobile
+  accessories, audio products, smart electronics and mobile repair
+  services.
+</p>
           </div>
         </div>
 
@@ -70,18 +73,20 @@ export function BentoSpecs() {
             <BadgeCheck className="h-6 w-6 text-molten sm:h-8 sm:w-8" strokeWidth={1.4} />
           </div>
           <div>
-            <h3 className="font-display text-2xl font-black uppercase leading-[0.9] tracking-tight sm:text-3xl md:text-4xl">
-              100%<br />Authentic.
-            </h3>
-            <p className="mt-2 text-sm leading-snug text-muted-foreground sm:mt-3 md:text-lg">
-              Official brands, verified serials, and sealed boxes. No compromises.
-            </p>
+            <h3>
+  Genuine<br />Products.
+</h3>
+
+<p>
+  Multi-brand smartphones, accessories and electronics sourced through
+  established retail and distribution channels.
+</p>
           </div>
         </div>
       </div>
 
       <div className="reveal mt-4 flex items-center justify-between font-mono text-[8px] uppercase tracking-[0.2em] text-muted-foreground sm:mt-6 sm:text-[10px] sm:tracking-[0.3em]">
-        <span className="flex items-center gap-2"><Sparkles className="h-3 w-3 text-molten" /> Hand-curated since 2010</span>
+        <span className="flex items-center gap-2"><Sparkles className="h-3 w-3 text-molten" /> Hand-curated </span>
         <a href="#contact" className="hover:text-molten">Visit the floor →</a>
       </div>
     </section>

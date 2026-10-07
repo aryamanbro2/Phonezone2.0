@@ -27,8 +27,11 @@ export function AboutSection() {
                         <p>
                             Dwarka’s trusted destination for smartphones, accessories, gadgets, and mobile solutions for over 20 years. From our journey in Sector 5 and Sector 12 Dwarka to now proudly serving customers at Ramphal Chowk, Sector 7, we have built our reputation on trust, genuine products, transparent pricing, and customer satisfaction.
                         </p>
+
                         <p>
-                            Today, Phone Zone 2.0 is one of the biggest mobile showrooms in Dwarka, New Delhi. We are an authorized reseller of all major mobile and audio brands.
+                            Phone Zone 2.0 is a multi-brand retailer and authorized retail partner
+                            for selected brands. Brand availability and authorization may vary by
+                            product category.
                         </p>
                     </div>
                 </div>
@@ -84,7 +87,7 @@ export function AboutSection() {
                     </h3>
                     <div className="flex-1 space-y-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
                         <p>
-                            Founded by Sunny Kharbanda, Phone Zone 2.0 is built on more than 25 years of experience in the mobile and electronics industry. His vision has always been simple — to provide genuine products, honest guidance, competitive pricing, and long-term customer satisfaction.
+                            Founded by Sunny Kharbanda, Phone Zone 2.0 is built on more than 20 years of experience in the mobile and electronics industry. His vision has always been simple — to provide genuine products, honest guidance, competitive pricing, and long-term customer satisfaction.
                         </p>
                         <p>
                             Under his leadership, the store continues to evolve with the latest technology trends while maintaining the personal touch and customer-first approach that you value most.

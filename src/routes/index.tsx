@@ -8,6 +8,7 @@ import { CustomCursor } from "@/components/CustomCursor";
 import { ModelProvider } from "@/components/ModelContext";
 import { RevealObserver } from "@/components/RevealObserver";
 import { AboutSection } from "@/components/AboutSection";
+import { BusinessInfo } from "@/components/BusinessInfo";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -34,6 +35,7 @@ function Index() {
       <HorizontalShowcase />
       <BentoSpecs />
       <AboutSection />
+      <BusinessInfo/>
       <ContactFooter />
     </>
   );

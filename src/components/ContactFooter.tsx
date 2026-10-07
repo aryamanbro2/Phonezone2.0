@@ -65,9 +65,10 @@ export function ContactFooter() {
                 Address
               </div>
               <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">
-                Plot 149, Ramphal Chowk<br />
+                Plot No. 149, Ramphal Chowk Road<br />
+                Beside SBI Bank, Palam Extension<br />
                 Sector 7, Dwarka<br />
-                New Delhi, 110075
+                New Delhi — 110075
               </p>
             </div>
             <div className="reveal">
@@ -76,20 +77,30 @@ export function ContactFooter() {
               </div>
               <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">
                 Mon — Sun<br />
-                11:00 — 21:00
+                11:00 — 21:30
               </p>
             </div>
             <div className="reveal">
               <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">
-                Direct Lines
+                Direct Line
               </div>
+
               <p className="mt-2 text-sm leading-snug sm:mt-3 sm:text-base md:text-lg">
-                +91 99994 44494<br />
-                +91 99994 44394<br />
-                +91 92127 73773<br />
-                +91 75299 99333<br />
-                <a href="mailto:phonezone2.0@gadgetic.in" className="mt-1 inline-block text-molten underline-offset-4 hover:underline break-all">
-                  phonezone2.0@gadgetic.in
+                <a
+                  href="tel:+919999444494"
+                  className="hover:text-molten"
+                >
+                  +91 99994 44494
+                </a>
+                <br />
+
+                <a
+                  href="https://wa.me/919999444494"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-molten hover:underline"
+                >
+                  WhatsApp ↗
                 </a>
               </p>
             </div>
@@ -98,6 +109,11 @@ export function ContactFooter() {
                 Legal & Social
               </div>
               <ul className="mt-2 space-y-1 text-base sm:mt-3 sm:text-lg md:text-xl">
+                <li>
+                  <a href="#business" className="hover:text-molten">
+                    Business Information
+                  </a>
+                </li>
                 <li><a href="/privacy" className="hover:text-molten">Privacy Policy</a></li>
                 <li><a href="/terms" className="hover:text-molten">Terms of Service</a></li>
                 <li><a href="https://wa.me/919999444494" target="_blank" rel="noreferrer" className="text-molten hover:underline">WhatsApp ↗</a></li>
