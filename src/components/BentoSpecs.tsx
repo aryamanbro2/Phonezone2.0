@@ -6,7 +6,7 @@ export function BentoSpecs() {
       <div className="reveal mb-6 flex items-end justify-between sm:mb-8">
         <div>
           <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-molten sm:text-[10px] sm:tracking-[0.3em]">
-            /03 — Doctrine
+            /03 — Why shop here
           </div>
           <h2
             className="font-display mt-2 font-black uppercase leading-[0.85] tracking-[-0.04em] text-fill-anim sm:mt-3"
@@ -16,7 +16,7 @@ export function BentoSpecs() {
           </h2>
         </div>
         <div className="hidden font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground md:block">
-          Three axioms · One floor
+          Clear information · Local support
         </div>
       </div>
 
@@ -61,7 +61,7 @@ export function BentoSpecs() {
               Expert<br />Care.
             </h3>
             <p className="mt-2 text-sm leading-snug text-muted-foreground sm:mt-3 md:text-lg">
-              Flagship repairs and expert consultation to keep your tech at peak performance.
+              Get help with device selection, setup and repair enquiries. Service availability depends on the device and requested service.
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@ export function BentoSpecs() {
           </div>
           <div>
             <h3>
-  Genuine<br />Products.
+  Product<br />Choice.
 </h3>
 
 <p>
@@ -86,8 +86,8 @@ export function BentoSpecs() {
       </div>
 
       <div className="reveal mt-4 flex items-center justify-between font-mono text-[8px] uppercase tracking-[0.2em] text-muted-foreground sm:mt-6 sm:text-[10px] sm:tracking-[0.3em]">
-        <span className="flex items-center gap-2"><Sparkles className="h-3 w-3 text-molten" /> Hand-curated </span>
-        <a href="#contact" className="hover:text-molten">Visit the floor →</a>
+        <span className="flex items-center gap-2"><Sparkles className="h-3 w-3 text-molten" /> Store support </span>
+        <a href="#contact" className="hover:text-molten">Visit the store →</a>
       </div>
     </section>
   );
