@@ -68,7 +68,7 @@ export function SideRail() {
         {/* bottom: index (Hidden on mobile) */}
         <div className="hidden font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:block">
           <div className="rotate-180" style={{ writingMode: "vertical-rl" }}>
-            EST · 2010
+            Dwarka · New Delhi
           </div>
         </div>
       </aside>
