@@ -10,7 +10,7 @@ This repository contains the website for **Phone Zone 2.0**, a mobile phone stor
 - **Phone:** +91 99994 44494
 - **Hours:** Daily · 11:00 AM – 9:30 PM
 
-Current stock, pricing, colours, product availability and repair eligibility should be confirmed via the store.
+Current stock, pricing, colours, product availability and repair eligibility should be confirmed from the store.
 
 ## Website
 
