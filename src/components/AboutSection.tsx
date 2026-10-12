@@ -5,7 +5,7 @@ export function AboutSection() {
     <section id="about" className="flex min-h-screen snap-start snap-always flex-col bg-background px-4 py-16 sm:px-6 sm:py-20 md:px-12">
       <div className="reveal mb-10 md:mb-16">
         <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-molten sm:text-[10px] sm:tracking-[0.3em]">
-          /04 — About the store
+          /04 — About Us
         </div>
         <h2
           className="font-display mt-2 font-black uppercase leading-[0.85] tracking-[-0.04em] text-fill-anim sm:mt-3"

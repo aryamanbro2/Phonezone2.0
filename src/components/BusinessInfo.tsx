@@ -5,15 +5,19 @@ export function BusinessInfo() {
         <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-molten sm:text-[10px] sm:tracking-[0.3em]">/06 — Business Information</div>
         <h2 className="mt-3 font-display text-4xl font-black uppercase tracking-tight sm:text-5xl md:text-7xl">Phone Zone 2.0</h2>
         <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-          Public-facing business name: Phone Zone 2.0. For formal business verification, use the registered legal name and address exactly as they appear on your official documents and in your Meta business portfolio.
+          Phone Zone 2.0 is a multi-brand mobile and electronics retailer serving customers in Sector 7, Dwarka, New Delhi.
         </p>
         <div className="mt-10 grid gap-8 md:grid-cols-2">
+          <div>
+            <div className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Business Name</div>
+            <p className="mt-2 text-lg">Phone Zone 2.0</p>
+          </div>
           <div>
             <div className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Business Type</div>
             <p className="mt-2 text-lg">Multi-brand mobile & electronics retailer</p>
           </div>
           <div>
-            <div className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Services</div>
+            <div className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">Products & Services</div>
             <p className="mt-2 text-lg">Smartphones · Accessories · Audio · Mobile Repairs</p>
           </div>
           <div>
