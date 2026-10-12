@@ -6,7 +6,7 @@ export function ContactFooter() {
       <div className="grid flex-1 grid-cols-1 md:grid-cols-2">
         <div className="relative flex flex-col justify-between border-b hairline px-4 py-16 sm:px-6 sm:py-20 md:border-b-0 md:border-r md:px-12 md:py-16">
           <div className="font-mono text-[9px] uppercase tracking-[0.25em] text-molten sm:text-[10px] sm:tracking-[0.3em]">
-            /05 — Contact & location
+            /05 — Contact Us
           </div>
           <h2
             className="reveal font-display font-black uppercase leading-[0.82] tracking-[-0.05em] text-fill-anim"
@@ -40,7 +40,7 @@ export function ContactFooter() {
 
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-12">
             <div className="reveal">
-              <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">Address</div>
+              <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">Business Address</div>
               <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">
                 Plot No. 149, Ramphal Chowk Road<br />
                 Beside SBI Bank, Palam Extension<br />
@@ -49,30 +49,30 @@ export function ContactFooter() {
               </p>
             </div>
             <div className="reveal">
-              <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">Hours</div>
-              <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">Mon — Sun<br />11:00 — 21:30</p>
+              <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">Opening Hours</div>
+              <p className="mt-2 text-base leading-snug sm:mt-3 sm:text-lg md:text-xl">Monday — Sunday<br />11:00 AM — 9:30 PM</p>
             </div>
             <div className="reveal">
-              <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">Direct Line</div>
+              <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">Phone & WhatsApp</div>
               <p className="mt-2 text-sm leading-snug sm:mt-3 sm:text-base md:text-lg">
                 <a href="tel:+919999444494" className="hover:text-molten">+91 99994 44494</a><br />
                 <a href="https://wa.me/919999444494" target="_blank" rel="noreferrer" className="text-molten hover:underline">WhatsApp ↗</a>
               </p>
             </div>
             <div className="reveal">
-              <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">Legal & Social</div>
+              <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[10px] sm:tracking-[0.3em]">Information & Policies</div>
               <ul className="mt-2 space-y-1 text-base sm:mt-3 sm:text-lg md:text-xl">
+                <li><a href="#about" className="hover:text-molten">About Us</a></li>
                 <li><a href="#business" className="hover:text-molten">Business Information</a></li>
                 <li><a href="/privacy" className="hover:text-molten">Privacy Policy</a></li>
-                <li><a href="/terms" className="hover:text-molten">Terms of Service</a></li>
-                <li><a href="https://wa.me/919999444494" target="_blank" rel="noreferrer" className="text-molten hover:underline">WhatsApp ↗</a></li>
+                <li><a href="/terms" className="hover:text-molten">Terms & Conditions</a></li>
               </ul>
             </div>
           </div>
 
           <div className="reveal mt-12 border-t hairline pt-6 text-xs leading-relaxed text-muted-foreground sm:text-sm">
             <p className="font-semibold text-foreground">Phone Zone 2.0</p>
-            <p className="mt-1">Business name displayed for customer reference. Please use the registered business name and address exactly as shown on official documents when completing business verification.</p>
+            <p className="mt-1">Mobile phones, accessories, audio products and mobile repair enquiries in Dwarka, New Delhi.</p>
             <p className="mt-2">For current stock, pricing, repair eligibility and service turnaround, please contact the store directly.</p>
             <p className="mt-4 font-mono text-[9px] uppercase tracking-[0.15em]">© 2026 Phone Zone 2.0. All rights reserved.</p>
           </div>
