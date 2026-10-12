@@ -14,41 +14,44 @@ export function SideRail() {
 
   return (
     <>
-      {/* ── Mobile Top Logo (Fixed Glass Badge) ── */}
-      <div className="fixed top-0 left-0 z-50 flex h-16 items-center px-2 md:hidden">
-        <a 
-          href="/#home" 
-          className="group relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg border border-white/5 bg-card/60 p-0.5 backdrop-blur-xl shadow-2xl transition-transform active:scale-95"
+      {/* Mobile wordmark and logo */}
+      <div className="fixed left-0 top-0 z-50 flex h-16 items-center gap-2 px-2 md:hidden">
+        <a
+          href="/#home"
+          className="group relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-white/5 bg-card/60 p-0.5 shadow-xl transition-transform active:scale-95"
         >
-          {/* subtle ambient glow that matches the brand color */}
-          <div 
-            className="absolute inset-0 opacity-30 blur-md transition-colors duration-700" 
+          <div
+            aria-hidden
+            className="absolute inset-0 opacity-30 blur-md transition-colors duration-700"
             style={{ background: "var(--molten)" }}
           />
-          
-          <img 
-            src={logo} 
-            alt="Phone Zone 2.0" 
+          <img
+            src={logo}
+            alt=""
             className="relative z-10 h-full w-full object-contain brightness-110"
           />
         </a>
+        <a href="/#home" className="text-sm font-bold tracking-tight text-foreground">
+          Phone Zone 2.0
+        </a>
       </div>
 
-      {/* ── Side Rail (Bottom Nav on Mobile, Side Rail on Desktop) ── */}
-      <aside className="fixed bottom-0 left-0 z-40 flex h-16 w-full flex-row items-center justify-around border-t hairline bg-background/80 px-4 backdrop-blur-md md:top-0 md:h-screen md:w-[max(60px,8vw)] md:flex-col md:justify-between md:border-r md:border-t-0 md:py-6">
-        {/* top: Actual Logo (Desktop Only) */}
-        <div className="hidden flex-col items-center gap-2 md:flex md:mb-8">
-          <a href="#home" className="relative block h-12 w-auto overflow-hidden sm:h-16">
-            <img 
-              src={logo} 
-              alt="Phone Zone 2.0" 
-              className="h-full w-auto object-contain brightness-110 contrast-125"
+      {/* Bottom navigation on mobile; side rail on desktop */}
+      <aside className="fixed bottom-0 left-0 z-40 flex h-16 w-full flex-row items-center justify-around border-t hairline bg-background/90 px-4 backdrop-blur-md md:top-0 md:h-screen md:w-[max(60px,8vw)] md:flex-col md:justify-between md:border-r md:border-t-0 md:py-6">
+        <div className="hidden flex-col items-center gap-2 md:mb-8 md:flex">
+          <a href="/#home" className="relative flex flex-col items-center gap-1">
+            <img
+              src={logo}
+              alt=""
+              className="h-12 w-auto object-contain brightness-110 contrast-125 sm:h-16"
             />
+            <span className="text-center text-[10px] font-bold leading-tight tracking-tight text-foreground">
+              Phone Zone 2.0
+            </span>
           </a>
         </div>
 
-        {/* nav icons */}
-        <nav className="flex flex-row items-center gap-6 md:flex-col md:gap-4 sm:md:gap-6">
+        <nav aria-label="Main navigation" className="flex flex-row items-center gap-6 md:flex-col md:gap-4 sm:md:gap-6">
           {links.map(({ id, label, Icon }) => (
             <a
               key={id}
@@ -62,10 +65,8 @@ export function SideRail() {
               </span>
             </a>
           ))}
-          {/* Add Legal links for easier navigation if needed, or keep them in footer */}
         </nav>
 
-        {/* bottom: index (Hidden on mobile) */}
         <div className="hidden font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:block">
           <div className="rotate-180" style={{ writingMode: "vertical-rl" }}>
             Dwarka · New Delhi
